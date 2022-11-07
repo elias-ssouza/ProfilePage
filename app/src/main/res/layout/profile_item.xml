@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
-            android:text="@string/bt_open_link"
+            android:text="Postar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_description"
             style="?attr/borderlessButtonStyle"/>
@@ -60,7 +60,7 @@
             android:id="@+id/iv_favorites"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/cd_favorite_icon"
+            android:contentDescription="Favoritar"
             app:layout_constraintBottom_toBottomOf="@+id/bt_link"
             app:layout_constraintEnd_toEndOf="parent"
             android:focusable="true"
@@ -69,18 +69,18 @@
             app:layout_constraintHorizontal_bias="0.781"
             app:layout_constraintStart_toEndOf="@+id/bt_link"
             app:layout_constraintTop_toTopOf="@+id/bt_link"
-            app:srcCompat="" />
+            app:srcCompat="@drawable/ic_favorite_icon" />
 
         <ImageView
             android:id="@+id/iv_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:contentDescription="@string/cd_share_icon"
+            android:contentDescription="Compartilhar"
             app:layout_constraintBottom_toBottomOf="@+id/bt_link"
             app:layout_constraintStart_toEndOf="@+id/iv_favorites"
             app:layout_constraintTop_toTopOf="@+id/bt_link"
-            app:srcCompat=""
+            app:srcCompat="@drawable/ic_share_icon"
             android:clickable="true"
             android:focusable="true"
             android:padding="4dp"/>
