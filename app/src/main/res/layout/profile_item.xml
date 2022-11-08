@@ -32,35 +32,45 @@
             android:layout_height="29dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="136dp"
-            android:text="TextView"
+            android:text="@string/tv_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.164"
             app:layout_constraintStart_toEndOf="@+id/ivNews"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="252dp"
+            android:text="@string/tv_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
         <EditText
             android:id="@+id/tv_description"
-            android:layout_width="369dp"
-            android:layout_height="72dp"
-            android:layout_marginTop="40dp"
-            android:text="Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor, ou de palavras aleatórias que nem sequer parecem suficientemente credíveis. Se vai usar uma passagem do Lorem Ipsum, deve ter a certeza que não contém nada de embaraçoso escondido no meio do texto. Todos os geradores de Lorem Ipsum na Internet acabam por repetir porções de texto pré-definido, como necessário, fazendo com que este seja o primeiro verdadeiro gerador na Internet. Usa um dicionário de 200 palavras em Latim, combinado com uma dúzia de modelos de frases, para gerar Lorem Ipsum que pareçam razoáveis. Desta forma, o Lorem Ipsum gerado é sempre livre de repetição, ou de injecção humorística, etc."
+            android:layout_width="363dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:text="@string/text_example"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:maxLength="250"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-
-            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bt_post"
             style="?attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="119dp"
+            android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:text="Postar"
+            android:text="@string/bt_post"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
@@ -69,8 +79,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:contentDescription="Favoritar"
+            android:contentDescription="@string/iv_favorite"
             android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/bt_post"
             app:layout_constraintEnd_toStartOf="@+id/iv_share"
@@ -85,13 +97,17 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="36dp"
             android:clickable="true"
-            android:contentDescription="Compartilhar"
+            android:contentDescription="@string/iv_share"
             android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/bt_post"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/bt_post"
             app:srcCompat="@drawable/ic_share_icon" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
