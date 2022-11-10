@@ -49,7 +49,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <EditText
+        <TextView
             android:id="@+id/tv_description"
             android:layout_width="363dp"
             android:layout_height="131dp"
