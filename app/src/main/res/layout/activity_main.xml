@@ -70,7 +70,7 @@
                 android:backgroundTint="@color/material_on_primary_disabled"
                 android:inputType="textMultiLine"
                 android:maxLength="300"
-                android:text="@string/text_example"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
