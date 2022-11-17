@@ -1,6 +1,5 @@
 package com.example.profilepage.ui
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.profilepage.data.ProfilePage
-import com.example.profilepage.databinding.ActivityMainBinding
 import com.example.profilepage.databinding.ProfileItemBinding
 
 class ProfilePageAdapter :
@@ -28,15 +26,14 @@ class ProfilePageAdapter :
         }
 
         inner class ViewHolder(
-            private val binding: ActivityMainBinding
+            private val binding: ProfileItemBinding
         ) : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(item: ProfilePage) {
                 binding.tvTitle.text = item.title
                 binding.tvSubtitle.text = item.subtitle
-                binding.tvDescription.editableText = item.t
-                binding.tvNomeEmpresa.text = item.company
-                binding.cvContent.setOnClickListener {
+                binding.tvDescription.text = item.description
+                binding.btPost.setOnClickListener {
                     listenerShare(it)
                 }
             }
@@ -49,5 +46,3 @@ class ProfilePageAdapter :
         override fun areContentsTheSame(oldItem: ProfilePage, newItem: ProfilePage) =
             oldItem.id == newItem.id
     }
-
-}

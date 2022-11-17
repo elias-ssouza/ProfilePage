@@ -8,5 +8,5 @@ data class ProfilePage(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val title: String,
     val subtitle: String,
-    val text: String,
+    val description: String
 )
