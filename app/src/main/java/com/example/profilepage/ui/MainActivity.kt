@@ -2,12 +2,13 @@ package com.example.profilepage.ui
 
 import android.Manifest
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import com.example.profilepage.App
-import com.example.profilepage.R
+import com.example.profilepage.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,19 +22,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
             setContentView(binding.root)
             setUpPermissions()
-            binding.rv
-
+            binding.rvPosts.adapter = adapter
             getAllBusinessCard()
+            insertListeners()
 
     }
 
     private fun insertListeners() {
-        binding.btnAdd.setOnClickListener {
+        binding.btPost.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        }
-        adapter.listenerShare = { card ->
-            Image.share(this@MainActivity, card)
         }
     }
 

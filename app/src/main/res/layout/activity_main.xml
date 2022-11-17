@@ -28,7 +28,7 @@
             android:background="@drawable/background_white_concrete">
 
             <ImageView
-                android:id="@+id/ivNews"
+                android:id="@+id/iv_news"
                 android:layout_width="65dp"
                 android:layout_height="66dp"
                 android:contentDescription="@string/profile_image"
@@ -49,7 +49,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.164"
-                app:layout_constraintStart_toEndOf="@+id/ivNews"
+                app:layout_constraintStart_toEndOf="@+id/iv_news"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -93,7 +93,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPost"
+        android:id="@+id/rv_posts"
         android:layout_width="416dp"
         android:layout_height="432dp"
         android:layout_marginTop="24dp"

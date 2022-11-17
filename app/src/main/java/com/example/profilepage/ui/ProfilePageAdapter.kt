@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.profilepage.data.ProfilePage
+import com.example.profilepage.databinding.ActivityMainBinding
+import com.example.profilepage.databinding.ProfileItemBinding
 
 class ProfilePageAdapter :
         ListAdapter<ProfilePage, ProfilePageAdapter.ViewHolder>(DiffCallback()) {
@@ -16,7 +18,7 @@ class ProfilePageAdapter :
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val inflater = LayoutInflater.from(parent.context)
-            val binding = ItemBusinessCardBinding.inflate(inflater, parent, false)
+            val binding = ProfileItemBinding.inflate(inflater, parent, false)
 
             return ViewHolder(binding)
         }
@@ -26,15 +28,14 @@ class ProfilePageAdapter :
         }
 
         inner class ViewHolder(
-            private val binding: MainActivityBinding
+            private val binding: ActivityMainBinding
         ) : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(item: ProfilePage) {
                 binding.tvTitle.text = item.title
                 binding.tvSubtitle.text = item.subtitle
-                binding.tvEmail.text = item.description
+                binding.tvDescription.editableText = item.t
                 binding.tvNomeEmpresa.text = item.company
-                binding.cvContent.setCardBackgroundColor(Color.parseColor(item.background))
                 binding.cvContent.setOnClickListener {
                     listenerShare(it)
                 }
