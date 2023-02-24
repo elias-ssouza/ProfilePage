@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             setContentView(binding.root)
             setUpPermissions()
             binding.rvPosts.adapter = adapter
-            getAllBusinessCard()
+            //getAllBusinessCard()
             insertListeners()
 
     }
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getAllBusinessCard() {
-        mainViewModel.getAll().observe(this, { profilePage ->
+        mainViewModel.getAll().observe(this) { profilePage ->
             adapter.submitList(profilePage)
-        })
+        }
     }
 }

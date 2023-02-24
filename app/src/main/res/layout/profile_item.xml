@@ -76,7 +76,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/bt_post"
+                android:id="@+id/bt_comment"
                 style="?attr/borderlessButtonStyle"
                 android:layout_width="119dp"
                 android:layout_height="54dp"
@@ -96,11 +96,11 @@
                 android:minWidth="48dp"
                 android:minHeight="48dp"
                 android:padding="4dp"
-                app:layout_constraintBottom_toBottomOf="@+id/bt_post"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_comment"
                 app:layout_constraintEnd_toStartOf="@+id/iv_share"
                 app:layout_constraintHorizontal_bias="0.908"
-                app:layout_constraintStart_toEndOf="@+id/bt_post"
-                app:layout_constraintTop_toTopOf="@+id/bt_post"
+                app:layout_constraintStart_toEndOf="@+id/bt_comment"
+                app:layout_constraintTop_toTopOf="@+id/bt_comment"
                 app:srcCompat="@drawable/ic_favorite_icon" />
 
             <ImageView
@@ -114,9 +114,9 @@
                 android:minWidth="48dp"
                 android:minHeight="48dp"
                 android:padding="4dp"
-                app:layout_constraintBottom_toBottomOf="@+id/bt_post"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_comment"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/bt_post"
+                app:layout_constraintTop_toTopOf="@+id/bt_comment"
                 app:srcCompat="@drawable/ic_share_icon" />
 
 

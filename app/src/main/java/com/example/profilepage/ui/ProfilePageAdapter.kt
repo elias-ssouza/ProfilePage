@@ -33,7 +33,7 @@ class ProfilePageAdapter :
                 binding.tvTitle.text = item.title
                 binding.tvSubtitle.text = item.subtitle
                 binding.tvDescription.text = item.description
-                binding.btPost.setOnClickListener {
+                binding.btComment.setOnClickListener {
                     listenerShare(it)
                 }
             }

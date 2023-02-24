@@ -46,6 +46,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="136dp"
                 android:text="@string/tv_title"
+                android:textAlignment="center"
+                android:background="@color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.164"
@@ -59,6 +61,8 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="252dp"
                 android:text="@string/tv_subtitle"
+                android:textAlignment="center"
+                android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -67,9 +71,10 @@
                 android:layout_width="363dp"
                 android:layout_height="131dp"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/material_on_primary_disabled"
+
                 android:inputType="textMultiLine"
                 android:maxLength="300"
+                android:background="@color/white"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -96,12 +101,9 @@
         android:id="@+id/rv_posts"
         android:layout_width="416dp"
         android:layout_height="432dp"
-        android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
         tools:listitem="@layout/profile_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
